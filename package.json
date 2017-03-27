@@ -1,0 +1,33 @@
+{
+  "name": "patch-module",
+  "version": "0.1.0",
+  "description": "Monkey patch npm modules.",
+  "author": "Blake Kus <blakekus+github@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./test/test.js",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kus/patch-module.git"
+  },
+  "keywords": [
+    "patch",
+    "module",
+    "monkey patch",
+    "require"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/kus/patch-module",
+  "bugs": {
+    "url": "https://github.com/kus/patch-module/issues"
+  },
+  "devDependencies": {
+    "coveralls": "^2.12.0",
+    "is-it-friday": "^0.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
+  }
+}
